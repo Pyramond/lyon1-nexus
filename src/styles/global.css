@@ -7,14 +7,6 @@ body{
     margin: 0;
 }
 
-iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: none;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +17,13 @@ header {
 
 header img.logo {
     margin-left: 20px;
+    height: 3.5em;
+    width: auto;
+}
+header img.parametre {
+    margin-left: 20px;
+    height: 3.5em;
+    width: auto;
 }
 
 header nav {
