@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+    <!-- Définition du gradient linéaire -->
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#35C1F6;" />
+            <stop offset="50%" style="stop-color:#3560F6;" />
+            <stop offset="100%" style="stop-color:#6A35F6;" />
+        </linearGradient>
+    </defs>
+
+    <!-- Utilisation du gradient pour le remplissage -->
+    <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" fill="url(#gradient)"/>
+</svg>
