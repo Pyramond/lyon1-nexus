@@ -1,25 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-}
-.logo, .parametre {
-    width: 40px;
-    height: 40px;
-}
 main {
     padding: 20px;
 }
@@ -40,7 +18,7 @@ h1 {
     padding-top: -10px;
     background: #e8e8e8;
     border: 1px solid #ccc;
-    height: 200px; /* Augmente la hauteur de la box */
+    height: 130px; /* Augmente la hauteur de la box */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -50,12 +28,13 @@ h1 {
     font-weight: bolder;
     font-size: large;
     transition: all 200ms ease;
-    border-radius: 10px; /* Bords arrondis */
-    overflow: hidden; /* Assure que tout dépassement est masqué */
-    p {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cours p {
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .cours:hover{
