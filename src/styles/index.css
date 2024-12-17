@@ -12,7 +12,7 @@ section{
 }
 h3{
     text-align: center;
-    padding: 0px 0px 20px 0px;
+    padding: 0 0 20px 0;
 }
 
 
@@ -37,7 +37,7 @@ main{
 .gauche{
     display: flex;
     width: 50%;
-    margin: 0px 1% 0px 0px;
+    margin: 0 1% 0 0;
     section{
         width: 50%;
     }
@@ -45,7 +45,7 @@ main{
         display:flex;
         flex-direction: column;
         padding: 1%;
-        margin: 0px 2% 0px 0px;
+        margin: 0 2% 0 0;
         div{
             display: flex;
             height: 100%;
@@ -65,7 +65,7 @@ main{
                 width: 90%;
                 display:flex;
                 flex-direction: column;
-                margin: 0px 2px 0px 2%;
+                margin: 0 2px 0 2%;
                 div{
                     display:flex;
                     flex-direction: column;
@@ -74,13 +74,13 @@ main{
                     background: #3560f6;
                     border: 1px solid black;
                     height: 25%;
-                    margin: 2% 0px 2% 0px;
+                    margin: 2% 0 2% 0;
                 }
                 .DS{
                     background:  #f63560;
                     border: 1px solid black;
                     height: 50%;
-                    margin: 2% 0px 2% 0px;
+                    margin: 2% 0 2% 0;
                 }
             }
         }
@@ -89,7 +89,7 @@ main{
         display: flex;
         flex-direction: column;
         padding: 1%;
-        margin: 0px 0px 0px 1%;
+        margin: 0 0 0 1%;
         div{
             display: flex;
             flex-direction: column;
@@ -116,20 +116,20 @@ main{
 .droite{
     width: 50%;
     justify-content: space-around;
-    margin: 0px 0px 0px 2%;
+    margin: 0 0 0 2%;
 
 
     .haut{
-        margin: 0px 0px 5% 0px;
+        margin: 0 0 5% 0;
         display: flex;
         .mails{
             display: flex;
             flex-direction: column;
             padding: 1%;
-            margin: 0px 2% 0px 0px;
+            margin: 0 2% 0 0;
             width: 50%;
             div{
-                margin: 0px 5% 0px 0px;
+                margin: 0 5% 0 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -153,11 +153,11 @@ main{
         .plats{
             padding: 1%;
             width: 50%;
-            margin: 0px 0px 0px 2%;
+            margin: 0 0 0 2%;
             div{
                 height: 80%;
                 width: 100%;
-                margin: 0px 5% 0px 0px;
+                margin: 0 5% 0 0;
                 ul{
                     height: 100%;
                     display: flex;
