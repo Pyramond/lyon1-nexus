@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+.logo, .parametre {
+    width: 40px;
+    height: 40px;
+}
+main {
+    padding: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.cours-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.cours {
+    margin: 15px;
+    margin-top: 0;
+    padding: 0;
+    padding-top: -10px;
+    background: #e8e8e8;
+    border: 1px solid #ccc;
+    height: 200px; /* Augmente la hauteur de la box */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: bolder;
+    font-size: large;
+    transition: all 200ms ease;
+    border-radius: 10px; /* Bords arrondis */
+    overflow: hidden; /* Assure que tout dépassement est masqué */
+    p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.cours:hover{
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+
+.img-cours {
+    width: 100%; /* Remplit la largeur de la box */
+    height: 80%; /* Remplit la hauteur de la box */
+    object-fit: cover; /* Maintient les proportions sans déformation */
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+.pagination span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+.pagination img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
