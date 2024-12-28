@@ -11,14 +11,6 @@ html, body {
     box-sizing: inherit; /* Pour éviter les dépassements dus aux bordures/padding */
 }
 
-header {
-    height: 60px; /* Fixer la hauteur du header */
-    line-height: 60px;
-    border-bottom: 1px solid #ccc;
-    z-index: 10; /* Pour s'assurer qu'il reste au-dessus */
-    position: relative;
-    background-color: white; /* Couleur de fond pour éviter la transparence */
-}
 
 /* Conteneur principal */
 #content {
@@ -32,7 +24,7 @@ header {
 aside {
     width: 15%; /* Ajusté pour laisser plus de place au main */
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.38);
     display: flex;
     flex-direction: column;
 }
@@ -47,9 +39,30 @@ aside {
 
 #search-bar {
     width: 100%;
-    border-radius: 5px;
-    padding: 5px;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid transparent; /* Rend la bordure transparente */
+    border-radius: 25px;
+    outline: none;
+    background-image: linear-gradient(white, white), /* Couleur de fond */
+    linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6); /* Gradient du contour */
+    background-origin: border-box;
+    background-clip: padding-box, border-box; /* S'assure que le gradient est appliqué au contour */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+#search-bar::placeholder {
+    color: #aaa;
+}
+
+#search-bar:focus {
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+
 
 #boxes {
     margin-top: 10px;
@@ -83,7 +96,7 @@ main {
     top: 0; /* L'ancre au haut de son conteneur */
     z-index: 5;
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.38);
     box-sizing: border-box;
     padding: 5px;
 }
@@ -104,12 +117,13 @@ main {
 
 #main-content {
     display: flex;
-    height: calc(100% - 10%); /* Ajuster selon l'espace restant */
+    height: calc(100% - 5%); /* Ajuster selon l'espace restant */
 }
 
 #main-people {
     width: 30%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgba(128, 128, 128, 0.38);
+    height: 100%;
 }
 
 #main-people ul {
@@ -156,7 +170,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.38);
     padding-bottom: 10px;
 }
 
