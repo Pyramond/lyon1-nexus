@@ -122,3 +122,16 @@ main {
     left: 15%;
     font-size: small;
 }
+
+@media (max-width: 768px) {
+
+    #login {
+        justify-content: space-evenly;
+        box-shadow: none;
+
+    }
+
+    main {
+        background: white;
+    }
+}
