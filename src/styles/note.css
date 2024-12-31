@@ -3,14 +3,31 @@
     margin: 0;
 }
 
+
 html{
     background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
-    height: 100%;
     font-family: Hellvetica,Arial;
-}
-
-body{
+    width: 100%;
     height: 100%;
+    body{
+        width: 100%;
+        height: 100%;
+        header {
+            height: 10%;
+        }
+        .contenu{
+            width: 100%;
+            height: 85%;
+            aside{
+                height: 100%;
+                width: 10%;
+            }
+            main{
+                height: 85%;
+                width: 90%;
+            }
+        }
+    }
 }
 
 
@@ -27,10 +44,7 @@ ul{
 
 .contenu{
     display: flex;
-    height: 100%;
     aside{
-        width: 10%;
-        height: 100%;
         ul{
             height: 100%;
             display: flex;
@@ -44,8 +58,6 @@ ul{
         }
     }
     main{
-        width: 90%;
-        height: 100%;
         .UE{
             padding: 2%;
             ul{
