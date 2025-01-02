@@ -262,3 +262,85 @@ main{
         }
     }
 }
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        width: 80%;
+        margin: 0 0 1% 0;
+    }
+
+    .gauche {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        .edt{
+            width: 80%;
+            margin: 0 0 2% 0;
+            .horaire{
+                height: 100%;
+                display: flex;
+            }
+        }
+        .notes{
+            margin: 0 0 2% 0;
+            width: 80%;
+        }
+    }
+    .droite {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .haut {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .mails{
+                margin: 0 0 2% 0;
+                width: 80%;
+            }
+            .plats{
+                margin: 0 0 2% 0;
+                width: 80%;
+            }
+        }
+    }
+
+
+
+    .edt div{
+        .horaire div:nth-child(n+2){
+            display:none;
+        }
+        .edt_jour div:nth-child(n+2){
+            display: none;
+        }
+    }
+    .notes div article:nth-child(n+2){
+        display: none;
+    }
+    .mails div article:nth-child(n+2) {
+        display: none !important;
+    }
+    .cours div ul li:nth-child(n+2){
+        display: none;
+    }
+
+}
+
+
