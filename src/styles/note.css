@@ -19,6 +19,17 @@ ul{
     }
 }
 
+.card_title{
+    background: linear-gradient(to right, #35C1F6, #3560F6, #6A35F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #8f94fb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 section, aside{
     background: white;
     border: 1px solid #e0e0e0;
