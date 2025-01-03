@@ -213,4 +213,8 @@ label {
         max-width: 85vw;
     }
 
+    #default-main-content {
+        display: none;
+    }
+
 }
