@@ -58,6 +58,14 @@ aside {
     display: none;
 }
 
+#default-main-content {
+    display: block;
+}
+
+body:has(:target) #default-main-content:not(:target) {
+    display: none;
+}
+
 .main-content:target {
     display: block;
 }
