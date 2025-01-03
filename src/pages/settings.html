@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/settings.css">
+        <title>Lyon1 Nexus</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html">
+                <img class="logo" src="../assets/images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="../pages/mail.html">Mail</a>
+                <a href="#">Restaurant universitaire</a>
+                <a href="#">Cours</a>
+                <a href="../pages/edt.html">Emplois du temps</a>
+                <a href="#">Notes</a>
+                <a href="./login.html">Connexion</a>
+            </nav>
+            <a href="../pages/settings.html"> <img class="parametre" src="../assets/images/parametre.png" alt="Paramètres"> </a>
+            <img id="menu" src="../assets/icons/menu.svg" alt="menu">
+        </header>
+
+        <div id="content">
+            <aside>
+                <h1>Paramètres</h1>
+                <ul id="pages-settings">
+                    <li> <a href="#ru">Restaurant universitaire</a> </li>
+                    <li> <a href="#notes">Notes</a> </li>
+                    <li> <a href="#cours">Cours</a> </li>
+                    <li> <a href="#mails">Mails</a> </li>
+                </ul>
+            </aside>
+            <main>
+
+                <div id="default-main-content" class="main-content">
+                    <h1 class="setting-title">Aucun paramètre séléctionné</h1>
+                </div>
+
+                <div id="ru" class="main-content">
+                    <h1 class="setting-title">Restaurant universitaire</h1>
+
+                    <div class="main-settings">
+
+                        <div>
+                            <input type="checkbox" name="entrees" id="entrees" checked>
+                            <label for="entrees">Voir les entrées</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="plats" id="plats" checked>
+                            <label for="plats">Voir les plats</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="dessert" id="dessert" checked>
+                            <label for="dessert">Voir les déssert</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="semaine" id="semaine" checked>
+                            <label for="semaine">Voir la semaine</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="notes" class="main-content">
+                    <h1 class="setting-title">Notes</h1>
+                    <div class="main-settings">
+
+                        <div id="round">
+                            <p> Arrondir les moyennes à: </p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="semaine" id="moyenne-gen" checked>
+                            <label for="semaine">Voir la moyenne générale</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cours" class="main-content">
+                    <h1 class="setting-title">Cours</h1>
+
+                    <div class="main-settings">
+                        <div id="exclure-cours">
+                            <p> Exclure des cours: </p>
+                            <input type="text">
+                        </div>
+
+                        <div id="inclure-cours">
+                            <p> Inclure des cours: </p>
+                            <input type="text">
+                        </div>
+
+                        <div id="nb-cours">
+                            <p> Nombre de cours visibles par page: </p>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mails" class="main-content">
+                    <h1 class="setting-title">Mails</h1>
+                    <div class="main-settings">
+                        <div id="signature">
+                            <p> Signature du mail: </p>
+                            <textarea id="textarea-signature"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="save-button"> Sauvegarder </button>
+            </main>
+        </div>
+    </body>
+</html>
