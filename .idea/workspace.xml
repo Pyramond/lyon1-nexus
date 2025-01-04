@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989c5d08-9347-46eb-b579-a0d2a79fcdf2" name="Changes" comment="Fix phone issue on grade page" />
+    <list default="true" id="989c5d08-9347-46eb-b579-a0d2a79fcdf2" name="Changes" comment="Fix phone issue on edt page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -376,7 +380,8 @@
     <MESSAGE value="add of page links" />
     <MESSAGE value="Fix responsive issues" />
     <MESSAGE value="Fix phone issue on grade page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix phone issue on grade page" />
+    <MESSAGE value="Fix phone issue on edt page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix phone issue on edt page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
