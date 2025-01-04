@@ -25,7 +25,7 @@ html{
 
 
 
-.semaine{
+.semaine, .choix_jour{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +43,10 @@ html{
         transform: scale(1.2);
     }
 }
+.choix_jour{
+    display: none;
+}
+
 
 
 
@@ -117,6 +121,25 @@ html{
             }
         }
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .semaine{
+        display: none;
+    }
+    .choix_jour{
+        display: flex;
+    }
+
+    .emploi_du_temps .edt .edt_semaine .edt_jour:nth-child(n+2){
+        display: none;
+    }
+    .jour, .blanc{
+        display:none;
+    }
+
+
 }
 
 
