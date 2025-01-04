@@ -129,6 +129,14 @@ main {
 #main-people li a {
     color: inherit;
     text-decoration: inherit;
+
+    p {
+        margin: 1px;
+    }
+
+    div {
+        margin: 1px;
+    }
 }
 
 #main-people li:hover {
