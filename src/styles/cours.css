@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+.disflex{
+
+    flex: 1;
+    display: flex;
+
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+
+.sidebar a.active {
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* ====== Contenu principal ====== */
+
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content img.img-cours {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (min-width: 768px) {
+    .navigation-arrows {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation-arrows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .navigation-arrows h2 {
+        font-size: 22px;
+    }
+
+    .arrows {
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+        height: 20px;
+        width: auto;
+    }
+
+    div h1{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+    }
+}
