@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989c5d08-9347-46eb-b579-a0d2a79fcdf2" name="Changes" comment="Fix phone issue on edt page">
+    <list default="true" id="989c5d08-9347-46eb-b579-a0d2a79fcdf2" name="Changes" comment="Fix pc issue on homepage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/edt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/edt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736011663870</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fix pc issue on homepage">
+      <option name="closed" value="true" />
+      <created>1736014474960</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736014474960</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +389,8 @@
     <MESSAGE value="Fix responsive issues" />
     <MESSAGE value="Fix phone issue on grade page" />
     <MESSAGE value="Fix phone issue on edt page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix phone issue on edt page" />
+    <MESSAGE value="Fix pc issue on homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix pc issue on homepage" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
