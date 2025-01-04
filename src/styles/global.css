@@ -13,7 +13,6 @@ header {
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(90deg, #35C1F6,#3560F6, #6A35F6);
-    height: 75px;
 }
 
 header img.logo, img.parametre {

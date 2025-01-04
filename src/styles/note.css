@@ -87,39 +87,50 @@ html{
         display: flex;
         flex-direction: column;
         width: 100%;
+        .menu_telephone {
+            label {
+                width: 100%;
+                .barre {
+                    height: 100%;
+                    background: red;
+                    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.38);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    width: 100%;
+                    .open_semestre{
+                        margin-right: auto;
+                    }
+                    .barre_recherche {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        #search-bar {
+                            
+                            display: block;
+                            padding: 10px 15px;
+                            font-size: 16px;
+                            border: 2px solid transparent;
+                            border-radius: 25px;
+                            outline: none;
+                            background-image: linear-gradient(white, white),
+                            linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6);
+                            background-origin: border-box;
+                            background-clip: padding-box, border-box;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+            }
+        }
         .contenu{
             width: 100%;
             display: flex;
             padding: 20px;
             flex: 1;
-            .menu_telephone {
-                label {
-                    width: 100%;
-                    .barre {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between; /* Ensures proper spacing */
-                        padding: 10px;
-                        width: 100%;
-                        .open_semestre{
-                            margin-right: auto;
-                        }
-                        .barre_recherche {
-                            flex: 1; /* Allows the input container to take available space */
-                            display: flex;
-                            justify-content: center; /* Centers the input horizontally */
-                            #search-bar {
-                                width: 50%; /* Adjust width as needed */
-                                max-width: 400px;
-                                padding: 8px;
-                                border: 1px solid #ccc;
-                                border-radius: 4px;
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
             aside{
                 flex: 1;
                 margin: 0 1% 0 0;
@@ -218,7 +229,6 @@ html{
             position: absolute;
             flex-direction: column;
             z-index: 2;
-            top: 75px;
             flex: 1;
             margin: 0 1% 0 0;
             height: auto;
