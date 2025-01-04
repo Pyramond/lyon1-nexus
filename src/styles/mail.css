@@ -3,8 +3,6 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Empêche le scroll horizontal */
-    box-sizing: border-box;
 }
 
 * {
@@ -32,34 +30,24 @@ aside {
 #search {
     height: auto;
     max-height: 10%;
-    border: 1px solid black;
     width: 90%;
     margin: 10px auto;
 }
 
 #search-bar {
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
     padding: 10px 15px;
+    margin-bottom: 5%;
     font-size: 16px;
-    border: 2px solid transparent; /* Rend la bordure transparente */
+    border: 2px solid transparent;
     border-radius: 25px;
     outline: none;
-    background-image: linear-gradient(white, white), /* Couleur de fond */
-    linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6); /* Gradient du contour */
+    background-image: linear-gradient(white, white),
+    linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6);
     background-origin: border-box;
-    background-clip: padding-box, border-box; /* S'assure que le gradient est appliqué au contour */
+    background-clip: padding-box, border-box;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#search-bar::placeholder {
-    color: #aaa;
-}
-
-#search-bar:focus {
-    border-color: transparent;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
 
 
