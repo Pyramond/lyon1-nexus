@@ -1,7 +1,33 @@
+html{
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    height: auto;
+    min-height: 100%;
+}
 main {
     padding: 20px;
 }
+section{
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 h1 {
+    margin-bottom: 20px;
+}
+.navigation-arrows {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    display: none;
+}
+.section-title{
+    border-bottom: #bababa 1px solid;
     margin-bottom: 20px;
 }
 .cours-container {
@@ -55,6 +81,9 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         margin: 0 30px;
+    }
+    .navigation-arrows {
+        display: flex;
     }
 }
 
