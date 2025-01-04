@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989c5d08-9347-46eb-b579-a0d2a79fcdf2" name="Changes" comment="Fix pc issue on homepage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/edt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/edt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
-    </list>
+    <list default="true" id="989c5d08-9347-46eb-b579-a0d2a79fcdf2" name="Changes" comment="add of the 2 fonts Hellvetica and Arial in the global.css file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736014474960</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add of the 2 fonts Hellvetica and Arial in the global.css file">
+      <option name="closed" value="true" />
+      <created>1736015595924</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736015595924</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +394,8 @@
     <MESSAGE value="Fix phone issue on grade page" />
     <MESSAGE value="Fix phone issue on edt page" />
     <MESSAGE value="Fix pc issue on homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix pc issue on homepage" />
+    <MESSAGE value="add of the 2 fonts Hellvetica and Arial in the global.css file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add of the 2 fonts Hellvetica and Arial in the global.css file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
