@@ -30,12 +30,9 @@ h3{
 
 html{
     background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
-    height: 100%;
     font-family: Hellvetica,Arial;
-}
-
-body{
-    height: 80%;
+    height: auto;
+    min-height: 100%;
 }
 
 
@@ -73,7 +70,6 @@ main{
             .horaire{
                 display: flex;
                 flex-direction: column;
-                width:20%;
                 justify-content: space-between;
                 div{
                     height: 25%;
@@ -97,11 +93,15 @@ main{
                 }
                 .TD{
                     background: #3560f6;
-                    height: 25%;
+                    @media screen and (min-width: 769px) {
+                        height: 25%;
+                    }
                 }
                 .DS{
                     background:  #f63560;
-                    height: 50%;
+                    @media screen and (min-width: 769px) {
+                        height: 50%;
+                    }
                 }
             }
         }
@@ -289,7 +289,6 @@ main{
             width: 80%;
             margin: 0 0 2% 0;
             .horaire{
-                height: 100%;
                 display: flex;
             }
         }
@@ -340,7 +339,12 @@ main{
     .cours div ul li:nth-child(n+2){
         display: none;
     }
-
+    .TD, .DS{
+        height: 100%;
+    }
+    .horaire div {
+        flex-grow: 1;
+    }
 }
 
 

@@ -47,7 +47,6 @@ ul{
 
 
 
-
 .card_title{
     background: linear-gradient(to right, #35C1F6, #3560F6, #6A35F6);
     -webkit-background-clip: text;
@@ -80,10 +79,10 @@ section:hover, aside:hover , .semestre:hover{
 html{
     background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
     font-family: Hellvetica,Arial;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     width: 100%;
     body{
-        margin: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -219,10 +218,10 @@ html{
             position: absolute;
             flex-direction: column;
             z-index: 2;
-            top: 0;
+            top: 75px;
             flex: 1;
             margin: 0 1% 0 0;
-            height: 100%;
+            height: auto;
             ul {
                 height: 100%;
                 display: flex;
