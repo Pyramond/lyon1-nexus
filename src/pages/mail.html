@@ -10,20 +10,21 @@
     </head>
 
     <body>
-        <header>
-            <a href="../index.html">
-                <img class="logo" src="../assets/images/logo.png" alt="Logo">
-            </a>
-            <nav>
-                <a href="#">Mail</a>
-                <a href="#">Restaurant universitaire</a>
-                <a href="#">Cours</a>
-                <a href="#">Emplois du temps</a>
-                <a href="#">Notes</a>
-                <a href="#">Connexion</a>
-            </nav>
-            <img class="parametre" src="../assets/images/parametre.png" alt="Paramètres">
-        </header>
+    <header>
+        <a href="../index.html">
+            <img class="logo" src="../assets/images/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="../pages/mail.html">Mail</a>
+            <a href="#">Restaurant universitaire</a>
+            <a href="#">Cours</a>
+            <a href="../pages/edt.html">Emplois du temps</a>
+            <a href="../pages/note.html">Notes</a>
+            <a href="../pages/login.html">Connexion</a>
+        </nav>
+        <a href="../pages/settings.html"> <img class="parametre" src="../assets/images/parametre.png" alt="Paramètres"> </a>
+        <img id="menu" src="../assets/icons/menu.svg" alt="menu">
+    </header>
 
         <div id="content">
             <aside>
@@ -50,6 +51,10 @@
                     </ul>
                 </div>
                 <div id="main-content">
+                    <div id="main-header-mobile">
+                        <img src="../assets/icons/dark-menu.svg" alt="menu-icon">
+                        <input type="text" id="search-input" placeholder="Rechercher">
+                    </div>
                     <div id="main-people">
                         <ul>
                             <li>

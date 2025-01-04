@@ -3,28 +3,18 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Empêche le scroll horizontal */
-    box-sizing: border-box;
 }
 
 * {
     box-sizing: inherit; /* Pour éviter les dépassements dus aux bordures/padding */
 }
 
-header {
-    height: 60px; /* Fixer la hauteur du header */
-    line-height: 60px;
-    border-bottom: 1px solid #ccc;
-    z-index: 10; /* Pour s'assurer qu'il reste au-dessus */
-    position: relative;
-    background-color: white; /* Couleur de fond pour éviter la transparence */
-}
 
 /* Conteneur principal */
 #content {
     display: flex;
     flex-direction: row;
-    height: calc(100% - 60px); /* Ajuster en fonction de la hauteur du header */
+    height: calc(100% - 75px); /* Ajuster en fonction de la hauteur du header */
     width: 100%;
 }
 
@@ -32,7 +22,7 @@ header {
 aside {
     width: 15%; /* Ajusté pour laisser plus de place au main */
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.38);
     display: flex;
     flex-direction: column;
 }
@@ -40,16 +30,27 @@ aside {
 #search {
     height: auto;
     max-height: 10%;
-    border: 1px solid black;
     width: 90%;
     margin: 10px auto;
 }
 
 #search-bar {
-    width: 100%;
-    border-radius: 5px;
-    padding: 5px;
+    width: 90%;
+    padding: 10px 15px;
+    margin-bottom: 5%;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    background-image: linear-gradient(white, white),
+    linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
 
 #boxes {
     margin-top: 10px;
@@ -83,7 +84,7 @@ main {
     top: 0; /* L'ancre au haut de son conteneur */
     z-index: 5;
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.38);
     box-sizing: border-box;
     padding: 5px;
 }
@@ -104,12 +105,13 @@ main {
 
 #main-content {
     display: flex;
-    height: calc(100% - 10%); /* Ajuster selon l'espace restant */
+    height: calc(100% - 5%); /* Ajuster selon l'espace restant */
 }
 
 #main-people {
     width: 30%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgba(128, 128, 128, 0.38);
+    height: 100%;
 }
 
 #main-people ul {
@@ -127,6 +129,14 @@ main {
 #main-people li a {
     color: inherit;
     text-decoration: inherit;
+
+    p {
+        margin: 1px;
+    }
+
+    div {
+        margin: 1px;
+    }
 }
 
 #main-people li:hover {
@@ -156,7 +166,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.38);
     padding-bottom: 10px;
 }
 
@@ -208,4 +218,65 @@ main {
     background: linear-gradient(to right, #35C1F6, #3560F6, #6A35F6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#main-header-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    aside {
+        display: none;
+    }
+
+    #main-header {
+        display: none;
+    }
+
+    #main-mail {
+        display: none;
+    }
+
+    #main-people {
+        width: 100%;
+    }
+
+    #main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-header-mobile {
+        display: flex;
+        height: 8%;
+        background: red;
+        align-items: center;
+        justify-content: left;
+        background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+        border-bottom: 2px solid rgba(128, 128, 128, 0.38);
+        margin-bottom: 5px;
+
+        input {
+            width: 50%;
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            outline: none;
+            background-image: linear-gradient(white, white),
+            linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            margin: 10px;
+            color: white;
+        }
+
+    }
 }

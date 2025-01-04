@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-light-blue: #35c1f6;
+    --secondary-blue: #3560f6;
+    --secondary-dark-blue: #6a35f6;
+    --complementary-violet: #cb35f6;
+    --complementary-pink: #f635c1;
+    --complementary-red: #f63560;
+}
+
+
+.unite_enseignement{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 10% 1% 10%;
+    height: 5%;
+    p{
+        text-align: center;
+    }
+    img{
+        transition: transform 0.3s ease;
+        width: 30px;
+    }
+    img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+.semestre, .menu_telephone, input{
+    display: none;
+}
+
+
+
+
+.card_title{
+    background: linear-gradient(to right, #35C1F6, #3560F6, #6A35F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #8f94fb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section, aside, .semestre{
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    section, aside{
+        border-radius: 8px;
+    }
+}
+section:hover, aside:hover , .semestre:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+html{
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    font-family: Hellvetica,Arial;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .menu_telephone {
+            label {
+                width: 100%;
+                .barre {
+                    height: 100%;
+                    background: red;
+                    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.38);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    width: 100%;
+                    .open_semestre{
+                        margin-right: auto;
+                    }
+                    .barre_recherche {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        #search-bar {
+                            
+                            display: block;
+                            padding: 10px 15px;
+                            font-size: 16px;
+                            border: 2px solid transparent;
+                            border-radius: 25px;
+                            outline: none;
+                            background-image: linear-gradient(white, white),
+                            linear-gradient(45deg, #35c1f6, #3560f6, #6a35f6);
+                            background-origin: border-box;
+                            background-clip: padding-box, border-box;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+            }
+        }
+        .contenu{
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            flex: 1;
+            aside{
+                flex: 1;
+                margin: 0 1% 0 0;
+                ul{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    li{
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 8px;
+                        transition: all 0.3s ease-in-out;
+                        background: #e8f0fe;
+                    }
+                    li:hover{
+                        background: var(--primary-light-blue);
+                        cursor: pointer;
+                    }
+                }
+            }
+            main{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                section{
+                    margin: 0 0 1% 0;
+                }
+                .UE{
+                    padding: 2%;
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        li{
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 8px;
+                            transition: all 0.3s ease-in-out;
+                            background: #e8f0fe;
+                        }
+                        li:hover{
+                            background: var(--primary-light-blue);
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .notes{
+                    .matiere{
+                        padding: 3%;
+                        h3{
+                            color: #1a73e8;
+                        }
+                        ul{
+                            display:flex;
+                            flex-wrap: wrap;
+                            li{
+                                margin: 1% 1% 1% 1%;
+                                background: #f0f4f8;
+                                border-radius: 5px;
+                                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                text-align: center;
+                                padding: 10px;
+                                width: 5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contenu{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        margin: 5px 0 5px 0;
+    }
+    .unite_enseignement{
+        display: flex;
+    }
+    aside, .UE{
+        display: none;
+    }
+    .menu_telephone{
+        display: flex;
+    }
+    #menu-toggle:checked + label{
+        .semestre {
+            display: flex;
+            left: 0;
+            position: absolute;
+            flex-direction: column;
+            z-index: 2;
+            flex: 1;
+            margin: 0 1% 0 0;
+            height: auto;
+            ul {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li {
+                    padding: 10px;
+                    text-align: center;
+                    border-radius: 8px;
+                    transition: all 0.3s ease-in-out;
+                    background: #e8f0fe;
+                }
+                li:hover {
+                    background: var(--primary-light-blue);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
