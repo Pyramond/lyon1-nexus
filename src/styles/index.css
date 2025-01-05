@@ -145,11 +145,6 @@ main{
     }
 }
 
-
-
-
-
-
 .droite{
     width: 50%;
     justify-content: space-around;
@@ -246,10 +241,10 @@ main{
                         object-fit: cover;
                     }
                     p{
-                        flex-grow: 1;               /* Permet au texte de prendre l'espace restant */
-                        display: flex;              /* Active Flexbox pour centrer verticalement */
-                        align-items: center;        /* Centre verticalement */
-                        justify-content: center;    /* Centre horizontalement */
+                        flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         margin: 0;
                     }
                 }

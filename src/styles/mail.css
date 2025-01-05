@@ -1,4 +1,4 @@
-/* Réinitialisation de base */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -6,21 +6,19 @@ html, body {
 }
 
 * {
-    box-sizing: inherit; /* Pour éviter les dépassements dus aux bordures/padding */
+    box-sizing: inherit;
 }
 
-
-/* Conteneur principal */
 #content {
     display: flex;
     flex-direction: row;
-    height: calc(100% - 75px); /* Ajuster en fonction de la hauteur du header */
+    height: calc(100% - 75px);
     width: 100%;
 }
 
-/* Style pour l'aside */
+
 aside {
-    width: 15%; /* Ajusté pour laisser plus de place au main */
+    width: 15%;
     height: 100%;
     border: 1px solid rgba(128, 128, 128, 0.38);
     display: flex;
@@ -71,7 +69,6 @@ aside {
     cursor: pointer;
 }
 
-/* Style pour le main */
 main {
     flex: 1;
     height: 100%;
@@ -80,8 +77,8 @@ main {
 }
 
 #main-header {
-    position: sticky; /* Maintient le header en haut du main */
-    top: 0; /* L'ancre au haut de son conteneur */
+    position: sticky;
+    top: 0;
     z-index: 5;
     background-color: white;
     border-bottom: 1px solid rgba(128, 128, 128, 0.38);
@@ -105,7 +102,7 @@ main {
 
 #main-content {
     display: flex;
-    height: calc(100% - 5%); /* Ajuster selon l'espace restant */
+    height: calc(100% - 5%);
 }
 
 #main-people {
