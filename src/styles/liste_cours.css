@@ -82,14 +82,14 @@ h1 {
         gap: 15px;
         margin: 0 30px;
     }
-    .navigation-arrows {
-        display: flex;
-    }
 }
 
 @media (max-width: 767px) {
     .cours-container {
         gap: 5px;
+    }
+    .navigation-arrows {
+        display: flex;
     }
 }
 
