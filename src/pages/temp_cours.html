@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Cours 1</title>
-    <link rel="stylesheet" href="../styles/global.css" media="all">
-    <link rel="stylesheet" href="../styles/cours.css" media="all">
-</head>
-<body>
-<header>
-    <img src="../assets/images/logo.png" alt="Logo" class="logo">
-    <nav>
-        <a href="#">Mail</a>
-        <a href="self.html">Restaurant universitaire</a>
-        <a href="liste_cours.html">Cours</a>
-        <a href="#">Emplois du temps</a>
-        <a href="#">Notes</a>
-        <a href="#">Connexion</a>
-    </nav>
-    <img src="../assets/images/parametre.png" alt="Paramètres" class="parametre">
-</header>
-<div class="disflex">
-    <div class="sidebar">
-        <h3>Cours</h3>
-        <a href="temp_cours.html" class="active">Cours 1</a>
-        <a href="#">Cours 2</a>
-        <h3>TD</h3>
-        <a href="#">TD 1</a>
-        <a href="#">TD 2</a>
-        <h3>TP</h3>
-        <a href="#">TP 1</a>
-        <a href="#">TP 2</a>
-    </div>
-    <div class="content">
-        <div class="navigation-arrows">
-            <img class="arrows" src="../assets/images/left-arrow.png" alt="Précédent">
-            <h2>Cours 1</h2>
-            <img class="arrows" src="../assets/images/right-arrow.png" alt="Suivant">
-        </div>
-        <h1>Cours 1</h1>
-        <p>
-            <strong>Qu'est-ce que Lorem Ipsum ?</strong><br>
-            Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
-        </p>
-        <img src="../assets/images/cours.jpg" alt="Image du cours" class="img-cours">
-        <p>
-            <strong>Pourquoi l'utilise-t-on ?</strong><br>
-            Il est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres.
-        </p>
-    </div>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cours 1</title>
+        <link rel="stylesheet" href="../styles/global.css" media="all">
+        <link rel="stylesheet" href="../styles/cours.css" media="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img src="../assets/images/logo.png" alt="Logo" class="logo">
+            <nav>
+                <a href="#">Mail</a>
+                <a href="self.html">Restaurant universitaire</a>
+                <a href="liste_cours.html">Cours</a>
+                <a href="#">Emplois du temps</a>
+                <a href="#">Notes</a>
+                <a href="#">Connexion</a>
+            </nav>
+            <img src="../assets/images/parametre.png" alt="Paramètres" class="parametre">
+        </header>
+        <main>
+            <div class="menu_telephone">
+                <div class="barre">
+                    <img class="open_semestre" src="../assets/icons/dark-menu.svg" alt="Menu">
+                    <div class="barre_recherche">
+                        <input id="search-bar" type="text" placeholder="Rechercher">
+                    </div>
+                </div>
+            </div>
+            <div class="disflex">
+                <div class="sidebar">
+                    <h3>Cours</h3>
+                    <a href="temp_cours.html" class="active">Cours 1</a>
+                    <a href="#">Cours 2</a>
+                    <h3>TD</h3>
+                    <a href="#">TD 1</a>
+                    <a href="#">TD 2</a>
+                    <h3>TP</h3>
+                    <a href="#">TP 1</a>
+                    <a href="#">TP 2</a>
+                </div>
+                <div class="content">
+                    <section class="navigation-arrows">
+                        <img src="../assets/icons/arrow_back.svg" alt="arrow_back">
+                        <h2>Cours 1</h2>
+                        <img src="../assets/icons/arrow_forward.svg" alt="arrow_forward ">
+                    </section>
+                    <section>
+                        <div class="section-title">
+                            <h1>Cours inscrits</h1>
+                        </div>
+                        <p>
+                            <strong>Qu'est-ce que Lorem Ipsum ?</strong><br>
+                            Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+                        </p>
+                        <img src="../assets/images/cours.jpg" alt="Image du cours" class="img-cours">
+                        <p>
+                            <strong>Pourquoi l'utilise-t-on ?</strong><br>
+                            Il est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa mise en page. L'intérêt d'utiliser Lorem Ipsum est qu'il a une distribution plus ou moins normale des lettres.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
