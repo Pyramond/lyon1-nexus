@@ -69,6 +69,13 @@ a {
     font-size: 14px;
     color: #333;
     border-radius: 10px;
+    transition: all 200ms ease;
+}
+
+.sidebar a:hover {
+    background-color: #3560f6;
+    cursor: pointer;
+    color: white;
 }
 
 .sidebar a.active {
