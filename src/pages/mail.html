@@ -1,12 +1,200 @@
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/mail.css">
-    <title>Lyon1 Nexus</title>
-</head>
-<body>
 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/mail.css">
+        <title>Lyon 1 Nexus | Mail</title>
+        <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    </head>
+
+    <body>
+    <header>
+        <a href="../index.html">
+            <img class="logo" src="../assets/images/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="../pages/mail.html">Mail</a>
+            <a href="../pages/self.html">Restaurant universitaire</a>
+            <a href="../pages/liste_cours.html">Cours</a>
+            <a href="../pages/edt.html">Emplois du temps</a>
+            <a href="../pages/note.html">Notes</a>
+            <a href="../pages/login.html">Connexion</a>
+        </nav>
+        <a href="../pages/settings.html"> <img class="parametre" src="../assets/images/parametre.png" alt="Paramètres"> </a>
+        <img id="menu" src="../assets/icons/menu.svg" alt="menu">
+    </header>
+
+        <div id="content">
+            <aside>
+                <div id="search">
+                    <input id="search-bar" type="text" placeholder="Rechercher"/>
+                </div>
+
+                <ul id="boxes">
+                    <li> <p>Boîte de réception</p> </li>
+                    <li> <p>Elements envoyés</p> </li>
+                    <li> <p>Brouillons</p> </li>
+                    <li> <p>Elements supprimés</p> </li>
+                    <li> <p>Indésirables</p> </li>
+                </ul>
+
+            </aside>
+
+            <main>
+                <div id="main-header">
+                    <ul>
+                        <li> <div class="icon-div"> <img alt="new-icon" src="../assets/icons/send.svg" class="icon"> <p>Nouveau</p> </div> </li>
+                        <li> <div class="icon-div"> <img alt="delete-icon" src="../assets/icons/delete.svg" class="icon"> <p>Supprimer</p> </div>  </li>
+                        <li> <div class="icon-div"> <img alt="forward-icon" src="../assets/icons/forward.svg" class="icon"> <p>Transférer</p> </div>  </li>
+                    </ul>
+                </div>
+                <div id="main-content">
+                    <div id="main-header-mobile">
+                        <img src="../assets/icons/dark-menu.svg" alt="menu-icon">
+                        <input type="text" id="search-input" placeholder="Rechercher">
+                    </div>
+                    <div id="main-people">
+                        <ul>
+                            <li>
+                                <a href="#mail-1">
+                                    <p class="title">Soutien Algo</p>
+                                    <div>
+                                        <p>Prof algo</p>
+                                        <p>18/12/2024</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#mail-2">
+                                    <p class="title">Rapport SAE</p>
+                                    <div>
+                                        <p>Hugo RICHER</p>
+                                        <p>17/12/2024</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#mail-3">
+                                    <p class="title">Cours Archi</p>
+                                    <div>
+                                        <p>Giovanni Josserand</p>
+                                        <p>14/12/2024</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#mail-4">
+                                    <p class="title">Notes DS Math discrètes</p>
+                                    <div>
+                                        <p>Prof Math</p>
+                                        <p>10/12/2024</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="main-mail">
+                        <div id="mail-1" class="mail">
+                            <div class="mail-header">
+                                <div class="mail-infos">
+                                    <img src="../assets/images/profile-picture.svg" alt="profile-picture" class="profile-picture">
+                                    <div class="mail-title-date">
+                                        <h2>Prof algo</h2>
+                                        <p>18/12/2024</p>
+                                    </div>
+                                </div>
+                                <div class="icon-div answer-button"> <img alt="reply-icon" src="../assets/icons/reply.svg" class="icon"> <p>Répondre</p> </div>
+                            </div>
+                            <h1 class="mail-title">Soutien Algo</h1>
+                            <p class="mail-content">
+                                <br>
+                                Bonjour,
+                                <br>
+
+                                Les inscriptions pour le soutien de cette semaine sont ouvertes (même procédure que d’habitude). Date limite : demain (mardi) 18h00.
+                                <br>
+
+                                Au programme de cette semaine : la création de classes (avec un peu de graphique et d’interactions avec la souris).
+                                <br>
+
+                                Attention, il s’agit certainement de la dernière séance de soutien. <br>
+
+                                Cordialement
+                            </p>
+                        </div>
+                        <div id="mail-2" class="mail">
+                            <div class="mail-header">
+                                <div class="mail-infos">
+                                    <img src="../assets/images/profile-picture.svg" alt="profile-picture" class="profile-picture">
+                                    <div class="mail-title-date">
+                                        <h2>Hugo RICHER</h2>
+                                        <p>17/12/2024</p>
+                                    </div>
+                                </div>
+                                <div class="icon-div answer-button"> <img alt="reply-icon" src="../assets/icons/reply.svg" class="icon"> <p>Répondre</p> </div>
+                            </div>
+                            <h1 class="mail-title">Rapport SAE</h1>
+                            <p class="mail-content">
+                                <br>
+                                Bonjour,
+                                <br>
+                                Je t'envois le rapport demandé en début de semaine.
+                                <br>
+                                Coridalement,
+
+                            </p>
+                        </div>
+                        <div id="mail-3" class="mail">
+                            <div class="mail-header">
+                                <div class="mail-infos">
+                                    <img src="../assets/images/profile-picture.svg" alt="profile-picture" class="profile-picture">
+                                    <div class="mail-title-date">
+                                        <h2>Giovanni JOSSERAND</h2>
+                                        <p>14/12/2024</p>
+                                    </div>
+                                </div>
+                                <div class="icon-div answer-button"> <img alt="reply-icon" src="../assets/icons/reply.svg" class="icon"> <p>Répondre</p> </div>
+                            </div>
+                            <h1 class="mail-title">Cours Archi</h1>
+                            <p class="mail-content">
+                                <br>
+                                Bonjour,
+                                <br>
+                                Je t'envois le cours d'architechture système.
+                                <br>
+                                Coridalement,
+
+                            </p>
+                        </div>
+
+                        <div id="mail-4" class="mail">
+                            <div class="mail-header">
+                                <div class="mail-infos">
+                                    <img src="../assets/images/profile-picture.svg" alt="profile-picture" class="profile-picture">
+                                    <div class="mail-title-date">
+                                        <h2>Prof Math</h2>
+                                        <p>10/12/2024</p>
+                                    </div>
+                                </div>
+                                <div class="icon-div answer-button"> <img alt="reply-icon" src="../assets/icons/reply.svg" class="icon"> <p>Répondre</p> </div>
+                            </div>
+                            <h1 class="mail-title">Notes DS Math discrètes</h1>
+                            <p class="mail-content">
+                                <br>
+                                Bonjour,
+                                <br>
+                                Les notes du DS de math discrète sont disponibles sur Lyon 1 Nexus.
+                                <br>
+                                Coridalement,
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>

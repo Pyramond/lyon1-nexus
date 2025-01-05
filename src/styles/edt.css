@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    body{
+        width: 100%;
+        main{
+            width: 100%;
+            margin: 1em 1em 1em 1em;
+        }
+    }
+}
+
+section{
+    margin: 2% 5% 2% 5%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.semaine, .choix_jour{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1% 0 1% 0;
+    p{
+        text-align: center;
+    }
+    img{
+        transition: transform 0.3s ease;
+        width: 30px;
+    }
+    img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+.choix_jour{
+    display: none;
+}
+
+
+
+
+.emploi_du_temps {
+    display: flex;
+    .blanc{
+        height: 5%;
+    }
+    .horaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p {
+                text-align: end;
+            }
+        }
+    }
+
+    .edt {
+        width: 100%;
+        height: 100%;
+        .edt_semaine{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .edt_jour{
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                margin: 0 1% 0 1%;
+                .jour{
+                    text-align: center;
+                    margin: 0 0 5px 0;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    padding: 0 0 20px 0;
+                    *{
+                        margin: 2% 0 0 2%;
+                    }
+                }
+                .TD{
+                    background: #3560f6;
+                    height: 25%;
+                }
+                .pause{
+                    height: 25%;
+                }
+                .DS{
+                    background:  #f63560;
+                    height: 50%;
+                }
+                .TP{
+                    background:  #cb35f6;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .semaine{
+        display: none;
+    }
+    .choix_jour{
+        display: flex;
+    }
+
+    .emploi_du_temps .edt .edt_semaine .edt_jour:nth-child(n+2){
+        display: none;
+    }
+    .jour, .blanc{
+        display:none;
+    }
+
+
+}

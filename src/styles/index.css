@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+section{
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    background: linear-gradient(to right, #35C1F6, #3560F6, #6A35F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #8f94fb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+html{
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    height: auto;
+    min-height: 100%;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 1em 1em 1em;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.gauche{
+    display: flex;
+    width: 50%;
+    margin: 0 1% 0 0;
+    section{
+        width: 50%;
+    }
+    .edt{
+        display:flex;
+        flex-direction: column;
+        padding: 1%;
+        margin: 0 2% 0 0;
+        div{
+            display: flex;
+            height: 100%;
+            .horaire{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                div{
+                    height: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+            .edt_jour{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin: 0 2% 0 2%;
+                div{
+                    display:flex;
+                    flex-direction: column;
+                    margin: 0 0 2% 0;
+                    *{
+                        margin: 2% 0 0 2%;
+                    }
+                }
+                .TD{
+                    background: #3560f6;
+                    @media screen and (min-width: 769px) {
+                        height: 25%;
+                    }
+                }
+                .DS{
+                    background:  #f63560;
+                    @media screen and (min-width: 769px) {
+                        height: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .notes{
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        margin: 0 0 0 1%;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .bdd{
+                border-left: 5px solid #35c1f6;
+            }
+            .outils_maths{
+                border-left: 5px solid #CB35F6;
+            }
+            .init_algo{
+                border-left: 5px solid #f635C1;
+            }
+            article {
+                display: flex;
+                padding: 2%;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                .info{
+                    width:100%;
+                }
+                .note{
+                    display: flex;
+                    justify-content: end;
+                }
+            }
+            article:hover{
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.droite{
+    width: 50%;
+    justify-content: space-around;
+    margin: 0 0 0 2%;
+    .haut{
+        margin: 0 0 5% 0;
+        display: flex;
+        .mails{
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            margin: 0 2% 0 0;
+            width: 50%;
+            div{
+                margin: 0 5% 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                .email{
+                    display:flex;
+                    flex-direction: column;
+                    margin: 0 0 8% 0;
+                }
+                article{
+                    display: flex;
+                    padding: 2%;
+                    .date{
+                        display: flex;
+                        align-items: end;
+                        justify-content: end;
+                    }
+                }
+                article:hover{
+                    background-color: rgba(211, 211, 211, 0.23);
+                    cursor: pointer;
+                }
+            }
+        }
+        .plats{
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            margin: 0 0 0 2%;
+            width: 50%;
+            div{
+                height: 80%;
+                width: 100%;
+                margin: 0 5% 0 0;
+                ul{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                    li{
+                        padding: 2%;
+                    }
+                    li:hover{
+                        background-color: rgba(211, 211, 211, 0.23);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .cours{
+        padding: 1%;
+
+        div{
+            ul{
+                margin-bottom: 2%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    margin: 0 2% 0 2%;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    background: #F8F8F8;
+                    align-items: center;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    width: 100%;
+                    height: 10rem;
+                    img{
+                        width: 100%;
+                        height: 80%;
+                        object-fit: cover;
+                    }
+                    p{
+                        flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0;
+                    }
+                }
+                li:hover{
+                    transform: translateY(-1px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        width: 80%;
+        margin: 0 0 1% 0;
+    }
+
+    .gauche {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        .edt{
+            width: 80%;
+            margin: 0 0 2% 0;
+            .horaire{
+                display: flex;
+            }
+        }
+        .notes{
+            margin: 0 0 2% 0;
+            width: 80%;
+        }
+    }
+    .droite {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .haut {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .mails{
+                margin: 0 0 2% 0;
+                width: 80%;
+            }
+            .plats{
+                margin: 0 0 2% 0;
+                width: 80%;
+            }
+        }
+    }
+
+
+
+    .edt div{
+        .horaire div:nth-child(n+2){
+            display:none;
+        }
+        .edt_jour div:nth-child(n+2){
+            display: none;
+        }
+    }
+    .notes div article:nth-child(n+2){
+        display: none;
+    }
+    .mails div article:nth-child(n+2) {
+        display: none !important;
+    }
+    .cours div ul li:nth-child(n+2){
+        display: none;
+    }
+    .TD, .DS{
+        height: 100%;
+    }
+    .horaire div {
+        flex-grow: 1;
+    }
+}
+
+
