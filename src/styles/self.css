@@ -47,15 +47,35 @@ main {
 .day-button, .menu-item{
     padding: 10px;
     text-align: center;
-    border-radius: 8px;
     transition: all 0.3s ease-in-out;
-    background: #e8f0fe;
+
     list-style: none;
+}
+img{
+    transition: transform 0.3s ease;
+    width: 30px;
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+h3{
+    background: linear-gradient(to right, #35C1F6, #3560F6, #6A35F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #8f94fb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu-item{
+    background: #e8f0fe;
 }
 
 .day-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #3560f6;
+    color: white;
     cursor: pointer;
 }
 
@@ -104,11 +124,7 @@ main {
     align-items: center;
     font-weight: bold;
 }
-.menu-item:hover{
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
+
 
 @media (min-width: 768px) {
     .menu-grid {
